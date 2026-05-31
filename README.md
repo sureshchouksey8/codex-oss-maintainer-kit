@@ -64,6 +64,8 @@ The intended workflow is:
 
 The tool is intentionally conservative. It does not post comments, close issues, merge pull requests, or make account decisions.
 
+See [docs/codex-workflow.md](docs/codex-workflow.md) for a longer Codex-assisted workflow and [examples/sample-brief.md](examples/sample-brief.md) for example output.
+
 ## Project status
 
 This is a new open-source project maintained by Suresh Chouksey as part of a broader Codex-assisted OSS workflow. The first milestone is a dependable triage brief for small and medium public repositories.
