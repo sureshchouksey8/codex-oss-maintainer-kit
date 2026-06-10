@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.metadata
 
 from .github import fetch_open_items, load_fixture
 from .render import render_json, render_text
@@ -16,6 +17,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--stale-after-days", type=int, default=30, help="Mark items stale after this many days")
     parser.add_argument("--format", choices=("text", "json"), default="text", help="Output format")
     parser.add_argument("--codex-prompt", action="store_true", help="Append a Codex-ready prompt block")
+    parser.add_argument("--version", action="version", version=f"%(prog)s {importlib.metadata.version('codex-oss-maintainer-kit')}", help="Show version and exit")
     return parser
 
 
